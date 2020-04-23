@@ -16,7 +16,7 @@ export default ({ initCount = 1 }: stateProps) => {
     return (
         <React.Fragment>
             Count: {count} <br />
-            <button onClick={() => setCount(1)}>Reset</button>
+            <button onClick={() => setCount(1)}>Reset22</button>
             <button onClick={() => setCount(count - 1)}>-</button>
             <button onClick={() => setCount(a => a + 1)}>+</button>
         </React.Fragment>
