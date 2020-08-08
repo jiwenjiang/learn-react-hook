@@ -5,6 +5,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import linkChild from "./linkChild"
 const UseStateView = lazy(() => import('./useStateView'));
 const UseEffectView = lazy(() => import('./useEffectView'));
 
@@ -23,6 +24,9 @@ function App() {
           <li>
             <Link to="/useEffectView">UseEffectView</Link>
           </li>
+          <li>
+            <Link to="/linkChild">linkChild</Link>
+          </li>
         </ul>
 
         <hr />
@@ -30,6 +34,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={UseStateView}></Route>
             <Route exact path="/useEffectView" component={UseEffectView}></Route>
+            <Route exact path="/linkChild" component={linkChild}></Route>
           </Switch>
         </Suspense>
       </div>
